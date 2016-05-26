@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock Challegne</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body style="text-align: center">
+<h1>Clock Challenge</h1>
+<p>Calculate the hour handle and the minute handle using javascript</p>
+<input type="number" placeholder="hour" id="hour">
+<input type="number" placeholder="minute" id="minute">
+<button onclick="test()">Submit</button>
+
+<h1 id="p1">You Answer Will Appear Here!</h1>
+
+<h3>Explanation:</h3>
+<p>1 clock = 360 degrees, 60 mins = 360 degrees, 12 hours = 360 degrees</p>
+<p>1 minute = 6 degrees, 1 hour = 360/12/60 = .5 degree</p>
+<p>So my approach is finding the distance between the hour and the minute then convert it into 1 unit (6 degrees per minute).</p>
+<p>Assuming Hour is between 1-12  and Minute is between 0-60 </p>
+<p>So since the distance to travel between 1 hour to another = 5 minutes</p>
+<p>So I got this simple formula:  Angle = [(Hour*5)-minute)]*6 </p>
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="logic.js"></script>
+</body>
+</html>
